@@ -1,0 +1,9 @@
+
+{
+  "name": "Kace",
+  "description": "Software engineer crafting high-performance web applications with modern JavaScript frameworks. Specializing in React, Node.js, and cloud technologies.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

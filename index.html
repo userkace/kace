@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Kace</title>
+  <meta name="description" content="Software engineer crafting high-performance web applications with modern JavaScript frameworks. Specializing in React, Node.js, and cloud technologies." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#fb945b",
+            "background-light": "#f8f7f5",
+            "background-dark": "#121212",
+            "card-dark": "#1e1e1f",
+            "border-dark": "#2e2e2e"
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          }
+        },
+      },
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer base {
+      body {
+        font-family: 'Inter', sans-serif;
+        scroll-behavior: smooth;
+        @apply bg-background-dark text-white selection:bg-primary/30 antialiased;
+      }
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .hero-title {
+      letter-spacing: -0.05em;
+    }
+    .text-outline {
+      -webkit-text-stroke: 1px rgba(255,255,255,0.1);
+      color: transparent;
+    }
+    .massive-heading {
+      font-size: clamp(3rem, 10vw, 8rem);
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+    }
+    /* Leaflet dark mode styling */
+    .leaflet-container {
+      background: #1e1e1f !important;
+    }
+    .leaflet-control-attribution {
+      background: rgba(30, 30, 31, 0.8) !important;
+      color: #9ca3af !important;
+    }
+    .leaflet-control-zoom {
+      background: #1e1e1f !important;
+      border: 1px solid #2e2e2e !important;
+    }
+    .leaflet-control-zoom a {
+      background: #1e1e1f !important;
+      color: #9ca3af !important;
+      border-color: #2e2e2e !important;
+    }
+    .leaflet-control-zoom a:hover {
+      background: #2e2e2e !important;
+      color: #fb945b !important;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+  <link rel="icon" type="image/png" href="/images/at-r.png">
+</head>
+<body>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
