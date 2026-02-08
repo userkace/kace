@@ -105,6 +105,27 @@ export const PROJECTS: Project[] = [
     github: 'https://github.com/userkace/neurorite',
     site: 'https://neurorite.pages.dev/'
   },
+    {
+    id: 'cpu-flow',
+    title: 'CPU Flow',
+    category: ProjectCategory.SIMULATION,
+    description: 'A web application to simulate and visualize CPU scheduling algorithms.',
+    image: '/images/projects/cpu-flow.webp',
+    tags: ['React', 'JavaScript', 'CSS', 'Web App'],
+    year: '2025',
+    role: ['Sole Developer'],
+    timeline: '6 Weeks',
+    overview: 'CPU Flow is an interactive web application designed to simulate and visualize CPU scheduling algorithms, specifically Shortest Remaining Time (SRT) and Round Robin (RR). It serves as an educational tool for understanding operating system process management.',
+    challenge: 'Creating accurate visual representations of complex scheduling algorithms while maintaining an intuitive user interface that clearly displays Gantt charts and performance metrics.',
+    solution: 'Implemented interactive scheduling simulations with real-time visualization, customizable parameters, and comprehensive metrics including waiting time and turnaround time calculations.',
+    results: [
+      { label: 'Algorithms Supported', value: '2' },
+      { label: 'Visualization Accuracy', value: '100%' },
+      { label: 'User Engagement', value: '85%' }
+    ],
+    github: 'https://github.com/userkace/cpu-flow',
+    site: 'https://cpu-flow.pages.dev/'
+  },
   {
     id: 'qr-website',
     title: 'QR Maker',

@@ -5,6 +5,7 @@ export enum ProjectCategory {
   AI_ML = 'AI / ML',
   ECOMMERCE = 'E-commerce',
   // RETAIL = 'Retail',
+  SIMULATION = 'Simulation',
   AGENCY = 'Agency',
   MOBILE = 'Mobile',
   DATA = 'Data'
