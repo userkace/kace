@@ -25,15 +25,15 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex gap-10">
+          <div className="flex flex-wrap gap-6 justify-center md:gap-10">
             <a className="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="https://github.com/userkace">GitHub</a>
             <a className="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="https://www.linkedin.com/in/kcspadilla/">LinkedIn</a>
             <a className="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="https://bsky.app/profile/kace.dev">Bluesky</a>
             <a className="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="https://www.instagram.com/kace.dev/">Instagram</a>
           </div>
 
-          <div className="text-xs font-bold uppercase tracking-[0.2em] opacity-40">
-            © {currentYear} KACE. All rights reserved.
+          <div className="text-xs font-bold uppercase tracking-[0.2em] opacity-40 text-center md:text-right flex-shrink-0">
+            <span>© {currentYear} KACE.</span><br/><span>All rights reserved.</span>
           </div>
         </div>
       </div>
