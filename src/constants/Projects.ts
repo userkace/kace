@@ -13,7 +13,18 @@ export const PROJECTS: Project[] = [
     timeline: '8 Weeks',
     overview: 'A comprehensive time-tracking solution designed to help employees monitor their work hours and improve productivity.',
     challenge: 'Creating an intuitive interface that balances powerful features with ease of use for non-technical users.',
-    solution: 'Implemented a clean, responsive design with real-time updates and comprehensive reporting features.',
+    solutions: [
+      {
+        icon: 'schedule',
+        title: 'Time Tracking',
+        description: 'Implemented intuitive time entry system with automatic calculations and comprehensive reporting features.'
+      },
+      {
+        icon: 'dashboard',
+        title: 'Analytics Dashboard',
+        description: 'Built responsive dashboard with real-time productivity metrics and detailed time analysis.'
+      }
+    ],
     results: [
       { label: 'User Adoption', value: '95%' },
       { label: 'Time Saved', value: '3hrs/day' },
@@ -34,7 +45,18 @@ export const PROJECTS: Project[] = [
     timeline: '20 Weeks',
     overview: 'Modern real-estate platform showcasing properties with advanced search and filtering capabilities.',
     challenge: 'Migrating from legacy WordPress to a modern, scalable cloud infrastructure.',
-    solution: 'Built with React, AWS services, and modern deployment practices for optimal performance.',
+    solutions: [
+      {
+        icon: 'cloud',
+        title: 'Cloud Migration',
+        description: 'Migrated from WordPress to modern React-based architecture with AWS cloud infrastructure.'
+      },
+      {
+        icon: 'search',
+        title: 'Advanced Search',
+        description: 'Developed sophisticated property search and filtering system with real-time results.'
+      }
+    ],
     results: [
       { label: 'Load Time', value: '2.1s' },
       { label: 'SEO Score', value: '95/100' },
@@ -54,7 +76,18 @@ export const PROJECTS: Project[] = [
     timeline: '6 Weeks',
     overview: 'Innovative browser extension using machine learning to identify AI-generated audio content.',
     challenge: 'Implementing real-time audio analysis with minimal performance impact.',
-    solution: 'Developed lightweight ML models optimized for browser environments with efficient audio processing.',
+    solutions: [
+      {
+        icon: 'analytics',
+        title: 'Audio Analysis',
+        description: 'Created lightweight machine learning models optimized for real-time audio processing in browsers.'
+      },
+      {
+        icon: 'speed',
+        title: 'Performance Optimization',
+        description: 'Implemented efficient audio processing pipeline with minimal CPU and memory footprint.'
+      }
+    ],
     results: [
       { label: 'Accuracy', value: '94%' },
       { label: 'Processing Time', value: '<500ms' },
@@ -75,7 +108,18 @@ export const PROJECTS: Project[] = [
     timeline: '16 Weeks',
     overview: 'AI-powered chatbot platform designed specifically for TikTok Live creators to enhance audience engagement.',
     challenge: 'Building real-time chat functionality with AI integration that can handle high-volume interactions.',
-    solution: 'Implemented scalable architecture with WebSocket connections and intelligent AI response systems.',
+    solutions: [
+      {
+        icon: 'chat',
+        title: 'Real-time Chat',
+        description: 'Built scalable WebSocket infrastructure for high-volume live chat interactions with AI integration.'
+      },
+      {
+        icon: 'smart_toy',
+        title: 'AI Integration',
+        description: 'Implemented intelligent response system with OpenAI API for contextual conversation handling.'
+      }
+    ],
     results: [
       { label: 'Active Users', value: '500+' },
       { label: 'Response Time', value: '<100ms' },
@@ -96,7 +140,18 @@ export const PROJECTS: Project[] = [
     timeline: '10 Weeks',
     overview: 'Cross-platform note-taking application with intelligent organization and synchronization features.',
     challenge: 'Creating a seamless experience across Android, Web, and PWA platforms with consistent performance.',
-    solution: 'Leveraged Flutter\'s cross-platform capabilities with Firebase backend for real-time synchronization.',
+    solutions: [
+      {
+        icon: 'sync',
+        title: 'Cross-Platform Sync',
+        description: 'Leveraged Flutter\'s unified framework with Firebase backend for seamless real-time synchronization.'
+      },
+      {
+        icon: 'phone_android',
+        title: 'Mobile Optimization',
+        description: 'Optimized performance across Android, Web, and PWA platforms with consistent user experience.'
+      }
+    ],
     results: [
       { label: 'Platform Support', value: '3' },
       { label: 'Sync Speed', value: '<1s' },
@@ -117,7 +172,18 @@ export const PROJECTS: Project[] = [
     timeline: '6 Weeks',
     overview: 'CPU Flow is an interactive web application designed to simulate and visualize CPU scheduling algorithms, specifically Shortest Remaining Time (SRT) and Round Robin (RR). It serves as an educational tool for understanding operating system process management.',
     challenge: 'Creating accurate visual representations of complex scheduling algorithms while maintaining an intuitive user interface that clearly displays Gantt charts and performance metrics.',
-    solution: 'Implemented interactive scheduling simulations with real-time visualization, customizable parameters, and comprehensive metrics including waiting time and turnaround time calculations.',
+    solutions: [
+      {
+        icon: 'code',
+        title: 'Algorithm Implementation',
+        description: 'Built accurate SRT and Round Robin scheduling algorithms with real-time process queue management and context switching visualization.'
+      },
+      {
+        icon: 'insights',
+        title: 'Performance Analytics',
+        description: 'Developed comprehensive metrics dashboard showing waiting time, turnaround time, and CPU utilization with interactive Gantt charts.'
+      }
+    ],
     results: [
       { label: 'Algorithms Supported', value: '2' },
       { label: 'Visualization Accuracy', value: '100%' },
@@ -138,7 +204,18 @@ export const PROJECTS: Project[] = [
     timeline: '2 Weeks',
     overview: 'Simple and efficient QR code generator with multiple customization options and instant download.',
     challenge: 'Creating a fast, reliable service with minimal dependencies and maximum accessibility.',
-    solution: 'Built lightweight PWA with client-side QR generation and progressive enhancement.',
+    solutions: [
+      {
+        icon: 'qr_code',
+        title: 'QR Generation',
+        description: 'Built lightweight PWA with client-side QR code generation and instant download capabilities.'
+      },
+      {
+        icon: 'phone_iphone',
+        title: 'Mobile Optimization',
+        description: 'Implemented progressive enhancement with offline support and responsive design across devices.'
+      }
+    ],
     results: [
       { label: 'Daily Users', value: '1000+' },
       { label: 'Generation Speed', value: '<100ms' },
@@ -159,7 +236,18 @@ export const PROJECTS: Project[] = [
     timeline: '4 Weeks',
     overview: 'Open-source streaming platform with support for multiple video formats and adaptive streaming.',
     challenge: 'Building a streaming solution that works across devices with minimal buffering.',
-    solution: 'Implemented adaptive bitrate streaming with progressive enhancement and offline capabilities.',
+    solutions: [
+      {
+        icon: 'video_library',
+        title: 'Streaming Technology',
+        description: 'Implemented adaptive bitrate streaming with Video.js for seamless video playback across devices.'
+      },
+      {
+        icon: 'download',
+        title: 'Offline Support',
+        description: 'Built PWA capabilities with offline video caching and progressive enhancement features.'
+      }
+    ],
     results: [
       { label: 'Buffer Reduction', value: '70%' },
       { label: 'Cross-platform', value: '100%' },
@@ -180,7 +268,18 @@ export const PROJECTS: Project[] = [
     timeline: '3 Weeks',
     overview: 'Utility app for Android developers to inspect and analyze package information of installed applications.',
     challenge: 'Creating a comprehensive package inspector with detailed metadata extraction.',
-    solution: 'Developed native Android app with deep system integration and intuitive data visualization.',
+    solutions: [
+      {
+        icon: 'apps',
+        title: 'Package Inspection',
+        description: 'Developed comprehensive Android package inspector with detailed metadata extraction and analysis.'
+      },
+      {
+        icon: 'data_object',
+        title: 'System Integration',
+        description: 'Built deep system integration with native Android APIs for thorough package information access.'
+      }
+    ],
     results: [
       { label: 'Downloads', value: '10K+' },
       { label: 'Rating', value: '4.5/5' },
@@ -200,7 +299,18 @@ export const PROJECTS: Project[] = [
     timeline: '1 Week',
     overview: 'Simple tool for generating Facebook Messenger links with customizable parameters and tracking.',
     challenge: 'Creating a straightforward utility with comprehensive customization options.',
-    solution: 'Built minimal interface with instant preview and clipboard functionality.',
+    solutions: [
+      {
+        icon: 'link',
+        title: 'Link Generation',
+        description: 'Built minimal interface with instant preview and clipboard functionality for Facebook Messenger links.'
+      },
+      {
+        icon: 'settings',
+        title: 'Customization',
+        description: 'Implemented comprehensive parameter customization with real-time link preview and validation.'
+      }
+    ],
     results: [
       { label: 'Links Generated', value: '50K+' },
       { label: 'Conversion Rate', value: '89%' },
@@ -221,7 +331,18 @@ export const PROJECTS: Project[] = [
     timeline: '6 Weeks',
     overview: 'Official website for LOOP Student Organization at Holy Angel University with dynamic content management.',
     challenge: 'Building a scalable platform for student organization with frequent content updates.',
-    solution: 'Implemented headless CMS integration with responsive design and performance optimization.',
+    solutions: [
+      {
+        icon: 'cms',
+        title: 'Content Management',
+        description: 'Integrated headless CMS for dynamic content updates with user-friendly admin interface.'
+      },
+      {
+        icon: 'speed',
+        title: 'Performance Optimization',
+        description: 'Optimized page load times with responsive design and modern web performance techniques.'
+      }
+    ],
     results: [
       { label: 'Page Speed', value: '95/100' },
       { label: 'Content Updates', value: '50+/month' },
@@ -241,7 +362,18 @@ export const PROJECTS: Project[] = [
     timeline: '8 Weeks',
     overview: 'Google Developer Student Club website featuring event management and member resources.',
     challenge: 'Integrating multiple Google services while maintaining optimal performance.',
-    solution: 'Leveraged Google Cloud ecosystem with Firebase for real-time features and authentication.',
+    solutions: [
+      {
+        icon: 'cloud',
+        title: 'Cloud Integration',
+        description: 'Leveraged Google Cloud ecosystem with Firebase for real-time features and authentication.'
+      },
+      {
+        icon: 'event',
+        title: 'Event Management',
+        description: 'Built comprehensive event registration system with member resources and engagement tracking.'
+      }
+    ],
     results: [
       { label: 'Event Registrations', value: '500+' },
       { label: 'Member Engagement', value: '85%' },

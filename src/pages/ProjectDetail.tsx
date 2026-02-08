@@ -100,16 +100,13 @@ const ProjectDetail: React.FC = () => {
               Technical Solution
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              <div className="p-10 bg-card-dark rounded-3xl border border-white/5 hover:border-primary/20 transition-colors">
-                <span className="material-symbols-outlined text-primary text-4xl mb-6">dynamic_form</span>
-                <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">System Architecture</h3>
-                <p className="text-white/50 text-sm leading-relaxed">{project.solution}</p>
-              </div>
-              <div className="p-10 bg-card-dark rounded-3xl border border-white/5 hover:border-primary/20 transition-colors">
-                <span className="material-symbols-outlined text-primary text-4xl mb-6">speed</span>
-                <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">Performance First</h3>
-                <p className="text-white/50 text-sm leading-relaxed">Leveraging distributed edge functions to minimize latency and provide instant UI responses for end users.</p>
-              </div>
+              {project.solutions.map((item, idx) => (
+                <div key={idx} className="p-10 bg-card-dark rounded-3xl border border-white/5 hover:border-primary/20 transition-colors">
+                  <span className="material-symbols-outlined text-primary text-4xl mb-6">{item.icon}</span>
+                  <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">{item.title}</h3>
+                  <p className="text-white/50 text-sm leading-relaxed">{item.description}</p>
+                </div>
+              ))}
             </div>
           </div>
 

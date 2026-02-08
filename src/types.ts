@@ -18,6 +18,12 @@ export enum Page {
   CONTACT = 'contact'
 }
 
+export interface SolutionItem {
+  icon: string;
+  title: string;
+  description: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -30,7 +36,8 @@ export interface Project {
   timeline: string;
   overview: string;
   challenge: string;
-  solution: string;
+  solution?: string;
+  solutions: SolutionItem[];
   results: {
     label: string;
     value: string;
