@@ -18,7 +18,7 @@ const About: React.FC = () => {
             </div>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-12">
               <p className="max-w-2xl text-xl text-slate-400 leading-relaxed font-medium">
-                I'm a Full-Stack Developer with {yearsOfExperience}+ years of experience building scalable web applications.
+                I'm a Software Engineer with {yearsOfExperience}+ years of experience building scalable web applications.
                 My journey has been defined by a passion for clean code, intuitive UX, and solving complex architectural challenges.
               </p>
               <div className="flex shrink-0 gap-4">
