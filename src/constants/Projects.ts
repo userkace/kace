@@ -6,7 +6,7 @@ export const PROJECTS: Project[] = [
     title: 'Kronos',
     category: ProjectCategory.WEB_APP,
     description: 'A time-tracking application for employees.',
-    image: '/images/projects/kronos.png',
+    image: '/images/projects/kronos.gif',
     tags: ['React', 'Node.js', 'Local Storage'],
     year: '2025',
     role: ['Sole Developer'],
