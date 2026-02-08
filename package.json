@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "tsx generate-sitemap.ts && vite build",
+    "preview": "vite preview",
+    "generate-sitemap": "tsx generate-sitemap.ts"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.21",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "tsx": "^4.21.0",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }
