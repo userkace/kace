@@ -2,6 +2,50 @@ import { Project, ProjectCategory } from '../types';
 
 export const PROJECTS: Project[] = [
   {
+    id: "homesfarmsandland",
+    title: "Homes Farms and Land",
+    category: ProjectCategory.ECOMMERCE,
+    description: "A modern real-estate platform built with React and AWS cloud infrastructure.",
+    image: "/images/projects/homesfarmsandland.webp",
+    tags: ["React", "AWS", "Tailwind", "Vite", "Amplify"],
+    year: "2025",
+    role: ["Project Manager", "Lead Developer"],
+    timeline: "20 Weeks",
+    overview: "Comprehensive modernization of a real-estate platform from WordPress to a scalable React-based architecture with advanced search capabilities, interactive mapping, and cloud-native infrastructure.",
+    challenge: "Transforming a legacy WordPress website with performance bottlenecks, limited customization, and scalability issues into a modern, high-performance real-estate platform capable of handling advanced property search, mapping, and lead generation features.",
+    solutions: [
+      {
+        "icon": "cloud",
+        "title": "Cloud Migration",
+        "description": "Migrated from WordPress hosting to AWS cloud infrastructure using Amplify for serverless backend, S3 for static hosting, and CloudFront CDN for global performance."
+      },
+      {
+        "icon": "search",
+        "title": "Advanced Search System",
+        "description": "Developed sophisticated property search with real-time filtering, map-based search using AWS Location Service, and intelligent similar properties recommendations."
+      },
+      {
+        "icon": "mobile",
+        "title": "Mobile-First Design",
+        "description": "Implemented responsive design using Tailwind CSS with custom component architecture, ensuring optimal user experience across all devices with 74% faster load times."
+      },
+      {
+        "icon": "code",
+        "title": "Modern Architecture",
+        "description": "Built component-based React architecture with atomic design principles, lazy loading, and code splitting for optimal performance and maintainability."
+      }
+    ],
+    results: [
+      { label: "Load Time", value: "1.1s" },
+      { label: "SEO Score", value: "95/100" },
+      { label: "Mobile Performance", value: "94/100" },
+      { label: "User Engagement", value: "+35%" },
+      { label: "Lead Conversion", value: "+45%" }
+    ],
+    github: "https://github.com/homesfarmsandland",
+    site: "https://homesfarmsandland.com"
+  },
+  {
     id: 'kronos',
     title: 'Kronos',
     category: ProjectCategory.WEB_APP,
@@ -32,37 +76,6 @@ export const PROJECTS: Project[] = [
     ],
     github: 'https://github.com/userkace/kronos',
     site: 'https://kronos-eta.vercel.app'
-  },
-  {
-    id: 'homesfarmsandland',
-    title: 'Homes Farms and Land',
-    category: ProjectCategory.ECOMMERCE,
-    description: 'A real-estate website.',
-    image: '/images/projects/homesfarmsandland.webp',
-    tags: ['React', 'AWS', 'Tailwind'],
-    year: '2025',
-    role: ['Project Manager', 'Lead Developer'],
-    timeline: '20 Weeks',
-    overview: 'Modern real-estate platform showcasing properties with advanced search and filtering capabilities.',
-    challenge: 'Migrating from legacy WordPress to a modern, scalable cloud infrastructure.',
-    solutions: [
-      {
-        icon: 'cloud',
-        title: 'Cloud Migration',
-        description: 'Migrated from WordPress to modern React-based architecture with AWS cloud infrastructure.'
-      },
-      {
-        icon: 'search',
-        title: 'Advanced Search',
-        description: 'Developed sophisticated property search and filtering system with real-time results.'
-      }
-    ],
-    results: [
-      { label: 'Load Time', value: '2.1s' },
-      { label: 'SEO Score', value: '95/100' },
-      { label: 'Mobile Performance', value: '92/100' }
-    ],
-    site: 'https://homesfarmsandland.com'
   },
   {
     id: 'truevoice',
