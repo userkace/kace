@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, layout = 'grid' }) =
           <span className="material-symbols-outlined text-slate-700 group-hover:text-primary transition-colors">arrow_outward</span>
         </div>
         <p className="text-slate-500 text-sm uppercase tracking-widest font-medium">
-          {project.category} • {project.tags.join(' • ')}
+          {Array.isArray(project.category) ? project.category.join(' • ') : project.category} • {project.tags.join(' • ')}
         </p>
       </div>
     </Link>

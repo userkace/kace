@@ -11,7 +11,12 @@ const Projects: React.FC = () => {
 
   const filteredProjects = activeCategory === 'ALL'
     ? PROJECTS
-    : PROJECTS.filter(p => p.category === activeCategory);
+    : PROJECTS.filter(p => {
+        if (Array.isArray(p.category)) {
+          return p.category.includes(activeCategory);
+        }
+        return p.category === activeCategory;
+      });
 
   return (
     <main className="pt-32 pb-20">

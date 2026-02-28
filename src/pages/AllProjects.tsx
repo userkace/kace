@@ -9,7 +9,12 @@ const AllProjects: React.FC = () => {
 
   const filteredProjects = filter === 'All'
     ? PROJECTS
-    : PROJECTS.filter(p => p.category === filter);
+    : PROJECTS.filter(p => {
+        if (Array.isArray(p.category)) {
+          return p.category.includes(filter);
+        }
+        return p.category === filter;
+      });
 
   const categories: (ProjectCategory | 'All')[] = ['All', ...Object.values(ProjectCategory)];
 

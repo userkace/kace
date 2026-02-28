@@ -184,6 +184,42 @@ export const PROJECTS: Project[] = [
     site: 'https://legacy-ai-alpha.vercel.app'
   },
   {
+    id: 'text2brainfuck',
+    title: 'Text2Brainfuck',
+    category: ProjectCategory.CLI,
+    description: 'A Python script that converts text strings into Brainfuck code.',
+    image: '/images/projects/text2brainfuck.gif',
+    tags: ['Python', 'Brainfuck', 'Esoteric'],
+    year: '2024',
+    role: ['Sole Developer'],
+    timeline: '1 Week',
+    overview: 'Text2Brainfuck is a command-line utility that converts any text string into executable Brainfuck code. The script features intelligent character-to-Brainfuck conversion with delta optimization for efficient code generation and optional output formatting.',
+    challenge: 'Creating an efficient algorithm that converts ASCII characters to Brainfuck instructions while minimizing code length and maintaining readability.',
+    solutions: [
+      {
+        icon: 'code',
+        title: 'Delta Optimization',
+        description: 'Implemented delta-based character conversion that calculates the difference between consecutive characters for more efficient Brainfuck code generation.'
+      },
+      {
+        icon: 'terminal',
+        title: 'CLI Interface',
+        description: 'Built comprehensive command-line interface with argument parsing, file output support, and customizable code formatting.'
+      },
+      {
+        icon: 'settings',
+        title: 'Flexible Output',
+        description: 'Added support for both commented and uncommented Brainfuck output with optional character annotations for debugging.'
+      }
+    ],
+    results: [
+      { label: 'Conversion Speed', value: '<10ms' },
+      { label: 'Code Efficiency', value: '85%' },
+      { label: 'Character Support', value: 'ASCII' }
+    ],
+    github: 'https://github.com/userkace/text2brainfuck'
+  },
+  {
     id: 'neurorite',
     title: 'Neurorite',
     category: ProjectCategory.MOBILE,

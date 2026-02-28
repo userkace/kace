@@ -8,7 +8,8 @@ export enum ProjectCategory {
   SIMULATION = 'Simulation',
   AGENCY = 'Agency',
   MOBILE = 'Mobile',
-  DATA = 'Data'
+  CLI = 'CLI Tool',
+  DATA = 'Data',
 }
 
 export enum Page {
@@ -27,7 +28,7 @@ export interface SolutionItem {
 export interface Project {
   id: string;
   title: string;
-  category: ProjectCategory;
+  category: ProjectCategory | ProjectCategory[];
   description: string;
   image: string;
   tags: string[];
