@@ -2,6 +2,48 @@ import { Project, ProjectCategory } from '../types';
 
 export const PROJECTS: Project[] = [
   {
+    id: 'gen-qr',
+    title: 'Gen QR',
+    category: ProjectCategory.WEB_APP,
+    description: 'A modern, intuitive QR code generator with custom colors, logos, and multiple QR types.',
+    image: '/images/projects/gen-qr.webp',
+    tags: ['React', 'Vite', 'Tailwind CSS', 'QuickChart API', 'Framer Motion'],
+    year: '2026',
+    role: ['Sole Developer'],
+    timeline: '1 Night',
+    overview: 'Gen QR is a comprehensive QR code generator that supports multiple QR types including URLs, WiFi networks, phone numbers, emails, locations, and vCards. Built with React and Vite for a fast, responsive experience with custom colors, logo support, and real-time preview.',
+    challenge: 'Creating a feature-rich QR generator that handles multiple QR types while maintaining excellent performance and user experience across all devices.',
+    solutions: [
+      {
+        icon: 'qr_code_2',
+        title: 'Multi-Type QR Generation',
+        description: 'Implemented support for 6 different QR types (URL, WiFi, Phone, Email, Location, vCard) with intelligent input validation and real-time preview.'
+      },
+      {
+        icon: 'palette',
+        title: 'Customization Features',
+        description: 'Built comprehensive customization system with custom colors, logo upload support, and hex color input with live preview updates.'
+      },
+      {
+        icon: 'phone_iphone',
+        title: 'Responsive Design',
+        description: 'Created mobile-first responsive interface using Tailwind CSS with touch-friendly controls and adaptive layouts.'
+      },
+      {
+        icon: 'download',
+        title: 'High-Quality Exports',
+        description: 'Implemented high-quality PNG downloads at 1000x1000px resolution with optimized QR code clarity and logo integration.'
+      }
+    ],
+    results: [
+      { label: 'Generation Speed', value: '<50ms' },
+      { label: 'Mobile Score', value: '95/100' },
+      { label: 'QR Types', value: '6' }
+    ],
+    github: 'https://github.com/userkace/qr',
+    site: 'https://qr.kace.dev'
+  },
+  {
     id: "homesfarmsandland",
     title: "Homes Farms and Land",
     category: ProjectCategory.ECOMMERCE,
@@ -234,8 +276,8 @@ export const PROJECTS: Project[] = [
       { label: 'Generation Speed', value: '<100ms' },
       { label: 'PWA Score', value: '96/100' }
     ],
-    github: 'https://github.com/userkace/qr',
-    site: 'https://qr.kace.dev'
+    github: 'https://github.com/userkace/old-qr',
+    site: 'https://old.qr.kace.dev'
   },
   {
     id: 'film-website',
