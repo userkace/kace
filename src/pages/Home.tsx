@@ -122,7 +122,7 @@ const Home: React.FC = () => {
         <div className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="relative">
             <div className="relative rounded-xl overflow-hidden aspect-square transition-all duration-700">
-              <img className="w-full h-full object-cover" alt="Kace" src="/images/portrait.jpg" />
+              <img className="w-full h-full object-cover" alt="Kace" src="/images/portrait.png" />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary text-background-dark p-8 rounded-lg shadow-xl hidden md:block">
               <p className="text-3xl font-black uppercase hero-title">{yearsOfProjects}+ Years</p>
