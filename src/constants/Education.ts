@@ -5,7 +5,7 @@ export const EDUCATION: Education[] = [
     id: 'edu-3',
     degree: 'Bachelor of Science in Computer Science',
     institution: 'Holy Angel University, Angeles City',
-    period: '2022 – Present',
+    period: '2022 – 2026',
     specialization: 'College',
     icon: 'school'
   },
