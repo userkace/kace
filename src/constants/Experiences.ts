@@ -30,7 +30,7 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     id: 'exp-7',
-    role: 'Software Engineer',
+    role: 'Artificial Intelligence Engineer',
     company: 'QuakesLegacy.com',
     period: 'April 2025 – August 2025',
     achievements: [
