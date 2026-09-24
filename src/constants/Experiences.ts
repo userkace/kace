@@ -46,6 +46,7 @@ export const EXPERIENCES: Experience[] = [
     id: 'exp-5',
     role: 'Artificial Intelligence Engineer',
     company: 'QuakesLegacy.com',
+    employmentType: 'Contract',
     period: 'April 2025 – August 2025',
     achievements: [
       'Spearheaded the development of LegacyAI, a SaaS chatbot platform for TikTok Live creators.',
