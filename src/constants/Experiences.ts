@@ -2,7 +2,7 @@ import { Experience } from '../types';
 
 export const EXPERIENCES: Experience[] = [
   {
-    id: 'exp-9',
+    id: 'exp-6c',
     role: 'Project Manager',
     company: 'Homes, Farms, and Land LLC',
     period: 'September 2025 – Present',
@@ -15,7 +15,7 @@ export const EXPERIENCES: Experience[] = [
     icon: 'rocket_launch'
   },
   {
-    id: 'exp-8',
+    id: 'exp-6b',
     role: 'Lead Software Engineer',
     company: 'Homes, Farms, and Land LLC',
     period: 'August 2025 – Present',
@@ -29,7 +29,20 @@ export const EXPERIENCES: Experience[] = [
     icon: 'laptop_mac'
   },
   {
-    id: 'exp-7',
+    id: 'exp-6a',
+    role: 'Web Developer (Contract)',
+    company: 'Homes, Farms, and Land LLC',
+    period: 'August 2025',
+    achievements: [
+      'Led the end-to-end migration of HomesFarmsandLand.com from IXACT to a self-hosted WordPress environment on Bluehost.',
+      'Transferred content and listings, configured hosting and DNS, and preserved search visibility through URL mapping and redirects.',
+      'Rebuilt the SEO foundation, resolving metadata, indexability, page-speed, and Core Web Vitals issues from the prior system.',
+      'Streamlined publishing and listings workflows for agents and staff, laying the groundwork for a cloud-native rebuild.'
+    ],
+    icon: 'web'
+  },
+  {
+    id: 'exp-5',
     role: 'Artificial Intelligence Engineer',
     company: 'QuakesLegacy.com',
     period: 'April 2025 – August 2025',
@@ -41,7 +54,7 @@ export const EXPERIENCES: Experience[] = [
     icon: 'code'
   },
   {
-    id: 'exp-6',
+    id: 'exp-3c',
     role: 'Cloud Developer',
     company: 'Google Developer Groups',
     period: 'April 2025 – November 2025',
@@ -53,7 +66,7 @@ export const EXPERIENCES: Experience[] = [
     icon: 'cloud'
   },
   {
-    id: 'exp-5',
+    id: 'exp-3b',
     role: 'Chief Financial Officer',
     company: 'Google Developer Groups',
     period: 'June 2024 – April 2025',
@@ -77,7 +90,7 @@ export const EXPERIENCES: Experience[] = [
     icon: 'account_balance'
   },
   {
-    id: 'exp-3',
+    id: 'exp-3a',
     role: 'Chief Technology Officer',
     company: 'Google Developer Groups HAU',
     period: 'July 2023 – June 2024',
@@ -89,7 +102,19 @@ export const EXPERIENCES: Experience[] = [
     icon: 'computer'
   },
   {
-    id: 'exp-2',
+    id: 'exp-2b',
+    role: 'Freelance Academic Service Provider',
+    company: 'Self-Employed',
+    period: 'June 2022 – January 2025',
+    achievements: [
+      'Empower students to achieve academic excellence through tailored support in proofreading, research, presentation design, and creative projects.',
+      'Refine written work for clarity and impact, and design compelling PowerPoint presentations that simplify complex ideas.',
+      'Craft research frameworks that streamline the discovery process while fostering communication, critical thinking, and problem-solving skills.'
+    ],
+    icon: 'edit_note'
+  },
+  {
+    id: 'exp-2a',
     role: 'Freelance Online Tutor',
     company: 'Self-Employed',
     period: 'June 2022 – January 2025',
