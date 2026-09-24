@@ -52,7 +52,10 @@ const About: React.FC = () => {
                     )}
                   </div>
                   <h4 className="text-2xl font-black tracking-tight">{exp.role}</h4>
-                  <p className="text-sm font-bold text-slate-400 mb-6 uppercase tracking-wider">{exp.company}</p>
+                  <p className="text-sm font-bold text-slate-400 mb-6 uppercase tracking-wider">
+                    {exp.company}
+                    {exp.employmentType && <span className="text-slate-500"> · {exp.employmentType}</span>}
+                  </p>
                   <ul className="space-y-3 text-sm text-slate-300">
                     {exp.achievements.map((item, i) => (
                       <li key={i} className="flex items-start gap-3">

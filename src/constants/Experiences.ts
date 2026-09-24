@@ -30,9 +30,10 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     id: 'exp-6a',
-    role: 'Web Developer (Contract)',
+    role: 'Web Developer',
     company: 'Homes, Farms, and Land LLC',
     period: 'August 2025',
+    employmentType: 'Contract',
     achievements: [
       'Led the end-to-end migration of HomesFarmsandLand.com from IXACT to a self-hosted WordPress environment on Bluehost.',
       'Transferred content and listings, configured hosting and DNS, and preserved search visibility through URL mapping and redirects.',
@@ -103,9 +104,10 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     id: 'exp-2b',
-    role: 'Freelance Academic Service Provider',
+    role: 'Academic Service Provider',
     company: 'Self-Employed',
     period: 'June 2022 – January 2025',
+    employmentType: 'Freelance',
     achievements: [
       'Empower students to achieve academic excellence through tailored support in proofreading, research, presentation design, and creative projects.',
       'Refine written work for clarity and impact, and design compelling PowerPoint presentations that simplify complex ideas.',
@@ -115,9 +117,10 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     id: 'exp-2a',
-    role: 'Freelance Online Tutor',
+    role: 'Academic Online Tutor',
     company: 'Self-Employed',
     period: 'June 2022 – January 2025',
+    employmentType: 'Freelance',
     achievements: [
       'Empower junior high school students to master complex subjects through personalized online instruction.',
       'Design adaptable lesson plans for programming languages like Python and Java, research methodologies, and statistical analysis.',

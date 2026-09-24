@@ -47,11 +47,20 @@ export interface Project {
   site?: string;
 }
 
+export type EmploymentType =
+  | 'Full-time'
+  | 'Part-time'
+  | 'Contract'
+  | 'Freelance'
+  | 'Internship'
+  | 'Volunteer';
+
 export interface Experience {
   id: string;
   role: string;
   company: string;
   period: string;
+  employmentType?: EmploymentType;
   isCurrent?: boolean;
   achievements: string[];
   icon: string;
