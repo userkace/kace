@@ -1,34 +1,53 @@
+import React, { useEffect, useRef } from 'react';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import '../styles/map.css';
 
-import React, { useEffect, useState } from 'react';
+// Olongapo City coordinates
+const POSITION: L.LatLngTuple = [14.8406, 120.2818];
 
 const Contact: React.FC = () => {
-  const [MapComponent, setMapComponent] = useState<React.ComponentType<any> | null>(null);
+  const mapRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Dynamically import Leaflet components to avoid SSR issues
-    import('react-leaflet').then((modules) => {
-      const { MapContainer, TileLayer, Marker, Popup } = modules;
-      
-      const MapComponent: React.FC<any> = ({ position }) => (
-        <MapContainer
-          center={position}
-          zoom={13}
-          style={{ height: '100%', width: '100%' }}
-          className="contrast-110"
-        >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-            url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-          />
-        </MapContainer>
-      );
-      
-      setMapComponent(() => MapComponent);
-    });
-  }, []);
+    if (!mapRef.current) return;
 
-  // Olongapo City coordinates
-  const position = [14.8406, 120.2818];
+    const map = L.map(mapRef.current, {
+      center: POSITION,
+      zoom: 11,
+      minZoom: 9,
+      maxZoom: 12,
+      zoomControl: false,
+      scrollWheelZoom: false,
+    });
+
+    L.tileLayer(
+      'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+      {
+        attribution: '&copy; <a href="https://www.esri.com" target="_blank" rel="noopener noreferrer">Esri</a>',
+      }
+    ).addTo(map);
+
+    // City/place labels on their own pane so the base-tile filter doesn't mute them
+    map.createPane('labels');
+    L.tileLayer(
+      'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}',
+      { pane: 'labels' }
+    ).addTo(map);
+
+    L.marker(POSITION, {
+      icon: L.divIcon({ className: 'map-pin', iconSize: [14, 14] }),
+      interactive: false,
+    }).addTo(map);
+
+    map.attributionControl.setPrefix(
+      '<a href="https://leafletjs.com" target="_blank" rel="noopener noreferrer">Leaflet</a>'
+    );
+
+    return () => {
+      map.remove();
+    };
+  }, []);
 
   return (
     <div className="pt-32 max-w-[1400px] mx-auto px-6 pb-20 mb-16">
@@ -104,7 +123,7 @@ const Contact: React.FC = () => {
             <p className="text-slate-500 mt-2">UTC+8, PHT</p>
           </div>
           <div className="relative w-full aspect-square rounded-xl overflow-hidden border border-slate-800">
-            {MapComponent && <MapComponent position={position} />}
+            <div ref={mapRef} className="h-full w-full" />
           </div>
         </div>
       </div>
